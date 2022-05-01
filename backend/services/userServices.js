@@ -4,6 +4,8 @@ function checkPassword(bodyPassword, password) {
     if(bcrypt.compareSync(bodyPassword, password)) {
         return true;
     }
+    
+    
     return false;
 }
 
