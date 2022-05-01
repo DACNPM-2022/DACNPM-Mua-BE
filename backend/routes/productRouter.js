@@ -5,7 +5,7 @@ import productRepo from '../repositories/productRepo.js';
 const productRouter = express.Router();
 
 productRouter.get(
-    '/seed', 
+    '/see', 
     expressAsyncHandler(async(req, res) => {
         const createProduct = await productRepo.insertProductSeed();
         res.send({product: createProduct});
